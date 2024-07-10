@@ -1,18 +1,14 @@
-// dati
 
-const space = ' '
-const boolean = ' 130'
+function mostraRisultato() {
+    // Ottenere i valori dagli input
+    let nome = document.getElementById("nome").value;
+    let cognome = document.getElementById("cognome").value;
+    let colore = document.getElementById("colore").value;
 
-// Chiedere all'utente i suoi dati
+    // Concatenare i valori e aggiungere "130"
+    
+    let risultato = nome + cognome + colore + "130";
 
-let nome = prompt("Inserisci il tuo nome:");
-let cognome = prompt("Inserisci il tuo cognome:");
-let colore = prompt("Inserisci il tuo colore preferito:");
-
- // SOMMA i valori e aggiungere "130"
-
- let risultato = nome + space + cognome + space + colore + space + boolean;
-
-// Mostrare il risultato nell'html
-
-document.getElementById("risultato").textContent = risultato;
+    // Mostrare il risultato sulla pagina
+    document.getElementById("result").textContent = risultato;
+}
